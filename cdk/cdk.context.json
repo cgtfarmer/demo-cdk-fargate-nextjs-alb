@@ -1,0 +1,51 @@
+{
+  "availability-zones:account=904233126155:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ],
+  "availability-zones:account=345594587646:region=us-east-1": [
+    "us-east-1a",
+    "us-east-1b",
+    "us-east-1c",
+    "us-east-1d",
+    "us-east-1e",
+    "us-east-1f"
+  ],
+  "load-balancer-listener:account=904233126155:listenerArn=arn$:aws$:elasticloadbalancing$:us-east-1$:904233126155$:listener/app/AppApi-Appli-iSFy3g6lccpN/c271046eb5b67282/cdd39cea66e7425c:loadBalancerType=application:region=us-east-1": {
+    "listenerArn": "arn:aws:elasticloadbalancing:us-east-1:904233126155:listener/app/AppApi-Appli-iSFy3g6lccpN/c271046eb5b67282/cdd39cea66e7425c",
+    "listenerPort": 80,
+    "securityGroupIds": [
+      "sg-05b2715748e905ec6"
+    ]
+  },
+  "security-group:account=904233126155:region=us-east-1:securityGroupId=sg-05b2715748e905ec6": {
+    "securityGroupId": "sg-05b2715748e905ec6",
+    "allowAllOutbound": false
+  },
+  "load-balancer-listener:account=904233126155:listenerArn=arn$:aws$:elasticloadbalancing$:us-east-1$:904233126155$:listener/app/AppApi-Appli-AuEXtg2bWo26/c28138f83f82aa92/0bf976b08f34bf89:loadBalancerType=application:region=us-east-1": {
+    "listenerArn": "arn:aws:elasticloadbalancing:us-east-1:904233126155:listener/app/AppApi-Appli-AuEXtg2bWo26/c28138f83f82aa92/0bf976b08f34bf89",
+    "listenerPort": 80,
+    "securityGroupIds": [
+      "sg-0ef0f9998d25ce9a7"
+    ]
+  },
+  "security-group:account=904233126155:region=us-east-1:securityGroupId=sg-0ef0f9998d25ce9a7": {
+    "securityGroupId": "sg-0ef0f9998d25ce9a7",
+    "allowAllOutbound": false
+  },
+  "load-balancer-listener:account=904233126155:listenerArn=arn$:aws$:elasticloadbalancing$:us-east-1$:904233126155$:listener/app/AppApi-Appli-vyIpdizD4V3f/81f6e681e80730b6/08a00f957f039e3b:loadBalancerType=application:region=us-east-1": {
+    "listenerArn": "arn:aws:elasticloadbalancing:us-east-1:904233126155:listener/app/AppApi-Appli-vyIpdizD4V3f/81f6e681e80730b6/08a00f957f039e3b",
+    "listenerPort": 80,
+    "securityGroupIds": [
+      "sg-061bb15709c85be2e"
+    ]
+  },
+  "security-group:account=904233126155:region=us-east-1:securityGroupId=sg-061bb15709c85be2e": {
+    "securityGroupId": "sg-061bb15709c85be2e",
+    "allowAllOutbound": false
+  }
+}

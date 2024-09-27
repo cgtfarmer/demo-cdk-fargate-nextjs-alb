@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      target: development
+    environment:
+      PORT: 80
+    tty: true
+    extra_hosts: # For Linux
+      - host.docker.internal:host-gateway
+    ports:
+      - 80:80
+    volumes:
+      - ./:/home/node/app
