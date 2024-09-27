@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import PlaywrightUtils from './playwright-utils';
-import { User } from '@/model/user';
+import { User } from '@/frontend/model/user';
 
 test('retrieve users', async ({ request }) => {
   const response = await request.get('/api/users');

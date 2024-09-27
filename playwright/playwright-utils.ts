@@ -1,5 +1,5 @@
-import { User } from "@/model/user";
-import { APIRequestContext } from "playwright-core";
+import { APIRequestContext } from 'playwright-core';
+import { User } from '@/frontend/model/user';
 
 export default class PlaywrightUtils {
 

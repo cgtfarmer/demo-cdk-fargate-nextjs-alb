@@ -5,7 +5,7 @@ import { AppStack } from '../lib/stacks/app-stack';
 import { InfraStack } from '../lib/stacks/infra-stack';
 
 const sandboxEnv: Environment = {
-  account: '',
+  account: '975050084058',
   region: 'us-east-1'
 };
 
@@ -19,5 +19,5 @@ const appStack = new AppStack(app, 'AppStack', {
   env: sandboxEnv,
   vpc: infraStack.vpc,
   ecsCluster: infraStack.ecsCluster,
-  fargateServiceDisabled: false
+  fargateServiceEnabled: true
 });

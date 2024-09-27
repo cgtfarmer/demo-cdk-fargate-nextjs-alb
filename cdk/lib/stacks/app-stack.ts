@@ -10,7 +10,7 @@ interface AppStackProps extends StackProps {
 
   ecsCluster: Cluster
 
-  fargateServiceDisabled: boolean;
+  fargateServiceEnabled: boolean;
 }
 
 export class AppStack extends Stack {
@@ -56,7 +56,7 @@ export class AppStack extends Stack {
       cluster: props.ecsCluster,
       taskDefinition: taskDefinition,
       assignPublicIp: false,
-      desiredCount: props.fargateServiceDisabled ? 0 : 2,
+      desiredCount: props.fargateServiceEnabled ? 2 : 0,
       circuitBreaker: {
         enable: true,
         rollback: true
@@ -65,8 +65,8 @@ export class AppStack extends Stack {
     });
 
     const scalableTarget = fargateService.autoScaleTaskCount({
-      minCapacity: props.fargateServiceDisabled ? 0 : 1,
-      maxCapacity: props.fargateServiceDisabled ? 0 : 2,
+      minCapacity: props.fargateServiceEnabled ? 1 : 0,
+      maxCapacity: props.fargateServiceEnabled ? 2 : 0,
     });
 
     scalableTarget.scaleOnCpuUtilization('CpuScaling', {
